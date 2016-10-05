@@ -4,6 +4,8 @@ import Data.Char
 --os testes 2 são para testa como lida com a condição do z, tendo em vista que voltaria para o começo da lista, caso esteja certo Retorna True, Caso não False
 --os testes 2 são para testar se a condição do " " está correta,  caso esteja certo Retorna True, Caso não False
 --os testes 4 é algo maior para comprovar que está correto caso esteja certo Retorna True, Caso não False
+unitteste = [cripjteste, cripkteste, criplteste, cripmteste, cripnteste, cripoteste, crippteste, cripqteste]
+
 cripateste1 :: Bool
 cripateste1 | cripa "abcd" == "bcde" = True
 			| otherwise = False
@@ -149,7 +151,169 @@ cripiteste3 | cripi "eu amo" == "nd jvx" = True
 cripiteste4 :: Bool
 cripiteste4 | cripi "eu hoje estou com fome" == "nd qxsn nbcxd lxv oxvn" = True
 			| otherwise = False	
--
+-------------------------------------------
+cripjteste1 :: Bool
+cripjteste1 | cripj "abcd" == "klmn" = True
+			| otherwise = False
+
+cripjteste2 :: Bool
+cripjteste2 | cripj "zaap" == "jkkz" = True
+			| otherwise = False
+
+cripjteste3 :: Bool
+cripjteste3 | cripj "eu amo" == "oe kwy" = True
+			| otherwise = False
+
+cripjteste4 :: Bool
+cripjteste4 | cripj "eu hoje estou com fome" == "oe ryto ocdye myw pywo" = True
+			| otherwise = False	
+
+cripjteste :: Bool
+cripjteste | [cripjteste1, cripjteste2, cripjteste3,cripjteste4] == [True,True,True,True] = True
+		   | otherwise = False 
+----------------------------------------------
+cripkteste1 :: Bool
+cripkteste1 | cripk "abcd" == "lmno" = True
+			| otherwise = False
+
+cripkteste2 :: Bool
+cripkteste2 | cripk "zaap" == "klla" = True
+			| otherwise = False
+
+cripkteste3 :: Bool
+cripkteste3 | cripk "eu amo" == "pf lxz" = True
+			| otherwise = False
+
+cripkteste4 :: Bool
+cripkteste4 | cripk "eu hoje estou com fome" == "pf szup pdezf nzx qzxp" = True
+			| otherwise = False	
+cripkteste :: Bool
+cripkteste | [cripkteste1, cripkteste2, cripkteste3,cripkteste4] == [True,True,True,True] = True
+		   | otherwise = False
+
+-----------------------------------------------
+criplteste1 :: Bool
+criplteste1 | cripl "abcd" == "mnop" = True
+			| otherwise = False
+
+criplteste2 :: Bool
+criplteste2 | cripl "zaap" == "lmmb" = True
+			| otherwise = False
+
+criplteste3 :: Bool
+criplteste3 | cripl "eu amo" == "qg mya" = True
+			| otherwise = False
+
+criplteste4 :: Bool
+criplteste4 | cripl "eu hoje estou com fome" == "qg tavq qefag oay rayq" = True
+			| otherwise = False	
+
+criplteste :: Bool
+criplteste | [criplteste1, criplteste2, criplteste3,criplteste4] == [True,True,True,True] = True
+		   | otherwise = False
+			
+------------------------------------------------
+cripmteste1 :: Bool
+cripmteste1 | cripm "abcd" == "nopq" = True
+			| otherwise = False
+
+cripmteste2 :: Bool
+cripmteste2 | cripm "zaap" == "mnnc" = True
+			| otherwise = False
+
+cripmteste3 :: Bool
+cripmteste3 | cripm "eu amo" == "rh nzb" = True
+			| otherwise = False
+
+cripmteste4 :: Bool
+cripmteste4 | cripm "eu hoje estou com fome" == "rh ubwr rfgbh pbz sbzr" = True
+			| otherwise = False	
+
+cripmteste :: Bool
+cripmteste | [cripmteste1, cripmteste2, cripmteste3,cripmteste4] == [True,True,True,True] = True
+		   | otherwise = False
+-----------------------------------------------
+cripnteste1 :: Bool
+cripnteste1 | cripn "abcd" == "opqr" = True
+			| otherwise = False
+
+cripnteste2 :: Bool
+cripnteste2 | cripn "zaap" == "nood" = True
+			| otherwise = False
+
+cripnteste3 :: Bool
+cripnteste3 | cripn "eu amo" == "si oac" = True
+			| otherwise = False
+
+cripnteste4 :: Bool
+cripnteste4 | cripn "eu hoje estou com fome" == "si vcxs sghci qca tcas" = True
+			| otherwise = False	
+cripnteste :: Bool
+cripnteste | [cripnteste1, cripnteste2, cripnteste3,cripnteste4] == [True,True,True,True] = True
+		   | otherwise = False
+			
+-------------------------------------------------
+cripoteste1 :: Bool
+cripoteste1 | cripo "abcd" == "pqrs" = True
+			| otherwise = False
+
+cripoteste2 :: Bool
+cripoteste2 | cripo "zaap" == "oppe" = True
+			| otherwise = False
+
+cripoteste3 :: Bool
+cripoteste3 | cripo "eu amo" == "tj pbd" = True
+			| otherwise = False
+
+cripoteste4 :: Bool
+cripoteste4 | cripo "eu hoje estou com fome" == "tj wdyt thidj rdb udbt" = True
+			| otherwise = False	
+
+cripoteste :: Bool
+cripoteste | [cripoteste1, cripoteste2, cripoteste3,cripoteste4] == [True,True,True,True] = True
+		   | otherwise = False
+			
+-------------------------------------------------
+crippteste1 :: Bool
+crippteste1 | cripp "abcd" == "qrst" = True
+			| otherwise = False
+
+crippteste2 :: Bool
+crippteste2 | cripp "zaap" == "pqqf" = True
+			| otherwise = False
+
+crippteste3 :: Bool
+crippteste3 | cripp "eu amo" == "uk qce" = True
+			| otherwise = False
+
+crippteste4 :: Bool
+crippteste4 | cripp "eu hoje estou com fome" == "uk xezu uijek sec vecu" = True
+			| otherwise = False	
+			
+crippteste :: Bool
+crippteste | [crippteste1, crippteste2, crippteste3,crippteste4] == [True,True,True,True] = True
+		   | otherwise = False
+			
+-------------------------------------------------
+cripqteste1 :: Bool
+cripqteste1 | cripq "abcd" == "rstu" = True
+			| otherwise = False
+
+cripqteste2 :: Bool
+cripqteste2 | cripq "zaap" == "qrrg" = True
+			| otherwise = False
+
+cripqteste3 :: Bool
+cripqteste3 | cripq "eu amo" == "vl rdf" = True
+			| otherwise = False
+
+cripqteste4 :: Bool
+cripqteste4 | cripq "eu hoje estou com fome" == "vl yfav vjkfl tfd wfdv" = True
+			| otherwise = False	
+			
+cripqteste :: Bool
+cripqteste | [cripqteste1, cripqteste2, cripqteste3,cripqteste4] == [True,True,True,True] = True
+		   | otherwise = False			
 
 				  
 cripa::String->String
@@ -206,3 +370,52 @@ cripi [] =[]
 cripi (a:b) | ((ord a)+9)> (ord 'z') = [chr ((ord a)-17)] ++ cripi b
 			| a == ' ' = [a] ++ cripi b
 			| otherwise = [chr ((ord a)+9)] ++ cripi b
+
+cripj::String->String
+cripj [] =[]
+cripj (a:b) | ((ord a)+10)> (ord 'z') = [chr ((ord a)-16)] ++ cripj b
+			| a == ' ' = [a] ++ cripj b
+			| otherwise = [chr ((ord a)+10)] ++ cripj b
+	
+cripk::String->String
+cripk [] =[]
+cripk (a:b) | ((ord a)+11)> (ord 'z') = [chr ((ord a)-15)] ++ cripk b
+			| a == ' ' = [a] ++ cripk b
+			| otherwise = [chr ((ord a)+11)] ++ cripk b
+			
+cripl::String->String
+cripl [] =[]
+cripl (a:b) | ((ord a)+12)> (ord 'z') = [chr ((ord a)-14)] ++ cripl b
+			| a == ' ' = [a] ++ cripl b
+			| otherwise = [chr ((ord a)+12)] ++ cripl b
+			
+cripm::String->String
+cripm [] =[]
+cripm (a:b) | ((ord a)+13)> (ord 'z') = [chr ((ord a)-13)] ++ cripm b
+			| a == ' ' = [a] ++ cripm b
+			| otherwise = [chr ((ord a)+13)] ++ cripm b
+
+cripn::String->String
+cripn [] =[]
+cripn (a:b) | ((ord a)+14)> (ord 'z') = [chr ((ord a)-12)] ++ cripn b
+			| a == ' ' = [a] ++ cripn b
+			| otherwise = [chr ((ord a)+14)] ++ cripn b
+			
+cripo::String->String
+cripo [] =[]
+cripo (a:b) | ((ord a)+15)> (ord 'z') = [chr ((ord a)-11)] ++ cripo b
+			| a == ' ' = [a] ++ cripo b
+			| otherwise = [chr ((ord a)+15)] ++ cripo b
+			
+cripp::String->String
+cripp [] =[]
+cripp (a:b) | ((ord a)+16)> (ord 'z') = [chr ((ord a)-10)] ++ cripp b
+			| a == ' ' = [a] ++ cripp b
+			| otherwise = [chr ((ord a)+16)] ++ cripp b
+			
+cripq::String->String
+cripq [] =[]
+cripq (a:b) | ((ord a)+17)> (ord 'z') = [chr ((ord a)-9)] ++ cripq b
+			| a == ' ' = [a] ++ cripq b
+			| otherwise = [chr ((ord a)+17)] ++ cripq b
+
